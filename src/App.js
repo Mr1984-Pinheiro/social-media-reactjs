@@ -1,13 +1,11 @@
 import Home from "./pages/home/Home";
-import {Person3Icon} from '@mui/icons-material';
+import Login from "./pages/login/Login";
+
 
 function App() {
   return (
     <div>
-      <h1>Hi God!</h1>
-      <Home />
-      <Person3Icon />
-
+      <Login />
     </div>
   );
 }
