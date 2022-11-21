@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "./register.scss"
 
 const Register = () => {
@@ -10,7 +11,10 @@ const Register = () => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
                 </p>
                 <span>Do you have an account?</span>
+                <Link to="/login">
                 <button>Login</button>
+                </Link>
+                
             </div>
             <div className="right">
                 <h1>Register</h1>
