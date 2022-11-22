@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 /exemple
+.youtube2022-react-social-ui
 
 # testing
 /coverage
