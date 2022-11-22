@@ -4,6 +4,7 @@ import Login from "./pages/login/Login"
 import Register from "./pages/register/Register";
 import {
   createBrowserRouter,
+  Navigate,
   Outlet,
   RouterProvider,
  
@@ -13,6 +14,8 @@ import LeftBar from "./components/leftBar/LeftBar"
 import RightBar from "./components/rightBar/RightBar"
  
 function App() {
+
+  const currentUser = true;
 
   const Layout = () => {
     return(
@@ -28,10 +31,22 @@ function App() {
     )
   }
 
+  const ProtectedRoute = ({ children }) => {
+    if (!currentUser) {
+      return <Navigate to="/login" />;
+    }
+
+    return children;
+  }
+
   const router = createBrowserRouter([
     {
        path: "/",
-       element: <Layout />,
+       element: (
+        <ProtectedRoute>
+        <Layout />
+        </ProtectedRoute>        
+       ),
        children: [
         {
           path: "/",
