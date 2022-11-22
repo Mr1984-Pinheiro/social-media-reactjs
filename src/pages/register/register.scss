@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .register {
     height: 100vh;
     background-color: rgb(193, 190, 255);
@@ -84,91 +84,5 @@
         }
 
     }
-=======
-.register {
-    height: 100vh;
-    background-color: rgb(193, 190, 255);
-    display: flex;
-    
-    justify-content: center;
-    align-items: center;
 
-    .card{
-        width: 50%;
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row-reverse;
-        background-color: white;
-        min-height: 400px;
-        overflow: hidden;
-
-        .left{
-            flex: 1;
-            background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)), url("https://img.freepik.com/vetores-premium/fundo-de-ilustracao-de-tecnologia-de-desenvolvedor-de-midia-social_188398-1484.jpg")
-            center;
-            background-size: cover;
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            color: #FFF;
-
-            h1{
-                font-size: 50px;
-                line-height: 50px;
-            }
-
-            
-            span{
-                font-size: 14px;
-            }
-
-            button{
-                width: 50%;
-                padding: 10px;
-                border: none;
-                background-color: white;
-                color: rebeccapurple;
-                cursor: pointer;
-                font-weight: bold;
-            }
-        }
-
-        .right {
-            flex: 1;
-            padding: 25px;
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
-            justify-content: center;
-            h1{
-                color: #555;
-            }
-
-            form{
-                display: flex;
-                flex-direction: column;
-                gap: 15px;
-
-                input{
-                    border: none;
-                    border-bottom: 1px solid lightgray;
-                    padding: 20px 10px;
-
-                }
-                button{
-                    width: 50%;
-                    padding: 10px;
-                    border: none;
-                    background-color: #938eef;
-                    color: white;
-                    font-weight: bold;
-                    cursor: pointer;
-                    margin-top: 15px;
-                }
-            }
-        }
-
-    }
->>>>>>> 882222007f019b18e6b7e506f65ee499d449740d
 }

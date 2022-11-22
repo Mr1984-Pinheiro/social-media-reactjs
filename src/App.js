@@ -1,16 +1,48 @@
-<<<<<<< HEAD
+import Home from "./pages/home/Home"
+import Profile from "./pages/profile/Profile"
 import Login from "./pages/login/Login"
 import Register from "./pages/register/Register";
 import {
   createBrowserRouter,
+  Outlet,
   RouterProvider,
  
  } from "react-router-dom"
-
+import NavBar from "./components/navbar/NavBar"
+import LeftBar from "./components/leftBar/LeftBar"
+import RightBar from "./components/rightBar/RightBar"
  
 function App() {
 
+  const Layout = () => {
+    return(
+      <div>
+        <NavBar />
+        <div style={{display:"flex"}} >
+            <LeftBar />
+            <Outlet />
+            <RightBar />
+
+        </div>
+      </div>
+    )
+  }
+
   const router = createBrowserRouter([
+    {
+       path: "/",
+       element: <Layout />,
+       children: [
+        {
+          path: "/",
+          element: <Home />
+        },
+        {
+          path: "/profile/:id",
+          element: <Profile />
+        }
+       ] 
+    },
     {
       path: "/login",
       element: <Login />
@@ -29,35 +61,5 @@ function App() {
 }
 
 export default App;
-=======
-import Login from "./pages/login/Login"
-import Register from "./pages/register/Register";
-import {
-  createBrowserRouter,
-  RouterProvider,
- 
- } from "react-router-dom"
 
- 
-function App() {
-
-  const router = createBrowserRouter([
-    {
-      path: "/login",
-      element: <Login />
-    },
-    {
-      path: "/register",
-      element: <Register />
-    }
-  ]);
-
-  return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
-  );
-}
-
-export default App;
->>>>>>> 882222007f019b18e6b7e506f65ee499d449740d
+    
