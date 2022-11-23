@@ -21,7 +21,7 @@ import Fund from "../../assets/13.png";
       <div className="container">
         <div className="menu">
           <div className="user">
-          {/*<img src="https://i.pinimg.com/736x/43/22/a6/4322a648a967bf028b29bd799861b305.jpg" alt="profile picture" />*/}
+          <img src="https://i.pinimg.com/736x/43/22/a6/4322a648a967bf028b29bd799861b305.jpg" alt="profile picture" />
             <span>John Maxcell</span>
           </div>
           <div className="item">
@@ -45,6 +45,51 @@ import Fund from "../../assets/13.png";
             <span>Memories</span>
           </div>
         </div>
+
+        <hr />
+
+        <div className="menu">
+            <span>Your shortcuts</span>
+            <div className="item">
+            <img src={Events} alt="" />
+            <span>Events</span>
+          </div>
+          <div className="item">
+            <img src={Gaming} alt="" />
+            <span>Gaming</span>
+          </div>
+          <div className="item">
+            <img src={Gallery} alt="" />
+            <span>Gallery</span>
+          </div>
+          <div className="item">
+            <img src={Videos} alt="" />
+            <span>Videos</span>
+          </div>
+          <div className="item">
+            <img src={Messages} alt="" />
+            <span>Messages</span>
+          </div>
+        </div>
+
+        <hr />
+
+        <div className="menu">
+          <span>Others</span>
+          <div className="item">
+            <img src={Fund} alt="" />
+            <span>Fundraiser</span>
+          </div>
+          <div className="item">
+            <img src={Tutorials} alt="" />
+            <span>Tutorials</span>
+          </div>
+          <div className="item">
+            <img src={Courses} alt="" />
+            <span>Courses</span>
+          </div>
+        </div>
+
       </div>
     </div>
   )
